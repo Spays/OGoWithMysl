@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
+        /*
         // Нормализация вектора
         movement = movement.normalized;
 
@@ -26,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
             float angle = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg; 
             rb.rotation = angle;
         }
+        */
     }
 
     void FixedUpdate()

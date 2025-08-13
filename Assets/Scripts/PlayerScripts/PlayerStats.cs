@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-    public float StaminaReload = 1;
-
-    public float LineCount = 5;
+    
     // Start is called before the first frame update
     void Start()
     {

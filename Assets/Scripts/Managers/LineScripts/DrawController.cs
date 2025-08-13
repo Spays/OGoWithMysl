@@ -6,13 +6,15 @@ public class DrawController : MonoBehaviour
     public float stamina = 50f; // количество доступных точек
     public float staminaBuff = 0F;
     public float pointSpacing = 0.1f;
+    public float StaminaReload = 1;
+    public float LineCount = 5;
 
     private CustomLine currentLine;
     private Vector3 lastPointPos;
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && stamina > 0 && gameObject.GetComponent<PlayerStats>().LineCount > 0)
+        if (Input.GetMouseButtonDown(0) && stamina > 0 && LineCount > 0)
         {
             CreateNewLine();
         }
@@ -43,7 +45,7 @@ public class DrawController : MonoBehaviour
 
     private void CreateNewLine()
     {
-        Debug.Log("I Create a new Line");
+        Debug.Log("I Create a new Line type of base");
         GameObject newLineObj = Instantiate(linePrefab);
         currentLine = newLineObj.GetComponent<CustomLine>();
         LineManager.Instance.AddLine(currentLine);
