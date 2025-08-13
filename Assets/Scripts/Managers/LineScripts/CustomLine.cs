@@ -4,7 +4,7 @@ using System.Collections.Generic;
 [RequireComponent(typeof(LineRenderer), typeof(EdgeCollider2D))]
 public class CustomLine : MonoBehaviour
 {
-    public string lineType = "Default"; // Тип линии
+    public LineType lineType = LineType.Defense; // Тип линии
     public float lifetime = 20f; // Время жизни линии
     public List<Vector3> points = new List<Vector3>();
 

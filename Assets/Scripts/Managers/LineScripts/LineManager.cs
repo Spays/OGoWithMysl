@@ -32,8 +32,8 @@ public class LineManager : MonoBehaviour
             // Удаляем первую точку
             line.points.RemoveAt(0);
             line.colliderPoints.RemoveAt(0);
-            Player.GetComponent<DrawController>().staminaBuff += Player.GetComponent<DrawController>().StaminaReload;
-            Debug.Log("буфер добавился");
+            //Player.GetComponent<DrawController>().staminaBuff += Player.GetComponent<DrawController>().StaminaReload;
+            //Debug.Log("буфер добавился");
 
             // Обновляем LineRenderer
             line.GetComponent<LineRenderer>().positionCount = line.points.Count;
@@ -45,31 +45,19 @@ public class LineManager : MonoBehaviour
             
             
             
-
-            if (!Input.GetMouseButton(0) && Player.GetComponent<DrawController>().stamina <= 50 /*&& Player.GetComponent<DrawController>().staminaBuff != 0*/)
+            /*
+            if (!Input.GetMouseButton(0)  && Player.GetComponent<DrawController>().staminaBuff != 0)
             {
-                Player.GetComponent<DrawController>().stamina += Player.GetComponent<DrawController>().StaminaReload;
+                Player.GetComponent<DrawController>().currentStamina += Player.GetComponent<DrawController>().StaminaReload;
                 Player.GetComponent<DrawController>().staminaBuff -= Player.GetComponent<DrawController>().StaminaReload;
                 Debug.Log("Стамина добавилась буфер убавился");
             }
-
+            */
+            
             yield return new WaitForSeconds(pointRemoveInterval);
 
-        }
-
-        while (Player.GetComponent<DrawController>().staminaBuff != 0)
-        {
-            //Player.GetComponent<DrawController>().staminaBuff += Player.GetComponent<PlayerStats>().StaminaReload;
-            if (!Input.GetMouseButton(0) && Player.GetComponent<DrawController>().stamina <= 50 /*&& Player.GetComponent<DrawController>().staminaBuff != 0*/)
-            {
-                Player.GetComponent<DrawController>().stamina += Player.GetComponent<DrawController>().StaminaReload;
-                Player.GetComponent<DrawController>().staminaBuff -= Player.GetComponent<DrawController>().StaminaReload;
-                Debug.Log("Стамина добавилась буфер убавился");
-            }
-            yield return new WaitForSeconds(pointRemoveInterval);
         }
         
-
         // Когда точек не осталось — удаляем объект
         if (line != null)
         {
@@ -78,5 +66,8 @@ public class LineManager : MonoBehaviour
             //Player.GetComponent<DrawController>().stamina += Player.GetComponent<PlayerStats>().StaminaReload;
             Player.GetComponent<DrawController>().LineCount += 1;
         }
+        
+        
     }
+    
 }

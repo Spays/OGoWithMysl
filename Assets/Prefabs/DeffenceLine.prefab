@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &928031482674577370
+--- !u!1 &9181018405285059931
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8393843751613793164}
-  - component: {fileID: 8019483658809545594}
-  - component: {fileID: 3281796956339200511}
-  - component: {fileID: 2191063933318191019}
+  - component: {fileID: 1275559479552726487}
+  - component: {fileID: 1727503859712063546}
+  - component: {fileID: 2228103028496666625}
+  - component: {fileID: 2142858009169648804}
   m_Layer: 0
-  m_Name: BaseLine
+  m_Name: DeffenceLine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8393843751613793164
+--- !u!4 &1275559479552726487
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 928031482674577370}
+  m_GameObject: {fileID: 9181018405285059931}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -6.2203164}
+  m_LocalPosition: {x: 0, y: 0, z: -6.239339}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!120 &8019483658809545594
+--- !u!120 &1727503859712063546
 LineRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 928031482674577370}
+  m_GameObject: {fileID: 9181018405285059931}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -76,56 +76,58 @@ LineRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Positions: []
+  m_Positions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.734035
+    widthMultiplier: 1
     widthCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
         time: 0
         value: 0
-        inSlope: 1.1972158
-        outSlope: 1.1972158
+        inSlope: 0
+        outSlope: 0
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
-        outWeight: 0.39835066
+        outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.5449219
-        value: 0.4973969
-        inSlope: 0.016207283
-        outSlope: 0.016207283
+        time: 0.45532802
+        value: 0.5068054
+        inSlope: 0
+        outSlope: 0
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0
-        outWeight: 0.30544847
+        inWeight: 0.33333334
+        outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
         value: 0
-        inSlope: -1.6415322
-        outSlope: -1.6415322
+        inSlope: 0
+        outSlope: 0
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.36337185
+        inWeight: 0
         outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.09795685, g: 0, b: 0.20754719, a: 1}
-      key1: {r: 0.68280745, g: 0, b: 1, a: 1}
-      key2: {r: 0.09803922, g: 0, b: 0.20784314, a: 1}
-      key3: {r: 0.098039225, g: 0, b: 0.20784315, a: 0}
+      key0: {r: 0.121568635, g: 0.6156863, b: 0.10980393, a: 1}
+      key1: {r: 0.005461772, g: 0.20754719, b: 0, a: 1}
+      key2: {r: 0.12197527, g: 0.61635214, b: 0.11047815, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
       ctime0: 0
       ctime1: 32768
-      ctime2: 64122
+      ctime2: 65535
       ctime3: 65535
       ctime4: 0
       ctime5: 0
@@ -133,7 +135,7 @@ LineRenderer:
       ctime7: 0
       atime0: 0
       atime1: 65535
-      atime2: 65535
+      atime2: 0
       atime3: 0
       atime4: 0
       atime5: 0
@@ -141,7 +143,7 @@ LineRenderer:
       atime7: 0
       m_Mode: 2
       m_ColorSpace: 0
-      m_NumColorKeys: 4
+      m_NumColorKeys: 3
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -154,13 +156,13 @@ LineRenderer:
   m_UseWorldSpace: 0
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
---- !u!68 &3281796956339200511
+--- !u!68 &2228103028496666625
 EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 928031482674577370}
+  m_GameObject: {fileID: 9181018405285059931}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -189,25 +191,25 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.3670175, y: 0}
-  - {x: 0.3670175, y: 0}
+  - {x: 2.1994271, y: -4.0230927}
+  - {x: 3.1994271, y: -4.0230927}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!114 &2191063933318191019
+--- !u!114 &2142858009169648804
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 928031482674577370}
+  m_GameObject: {fileID: 9181018405285059931}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a4edca126284484e8240c33c841f959, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lineType: 0
-  lifetime: 10
+  lifetime: 20
   points: []
   colliderPoints: []
