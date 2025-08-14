@@ -4,7 +4,6 @@ public class DrawController : MonoBehaviour
 {
     public float currentStamina = 50f;
     public float maxStamina = 50f; // количество доступных точек
-    public float staminaBuff = 0f;
     public float StaminaPrice = 1f;
     public float pointSpacing = 0.1f;
     public float StaminaReload = 1;

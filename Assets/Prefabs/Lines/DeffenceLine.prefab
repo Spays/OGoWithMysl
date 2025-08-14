@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a4edca126284484e8240c33c841f959, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lineType: 0
+  lineType: 1
   lifetime: 20
   points: []
   colliderPoints: []
