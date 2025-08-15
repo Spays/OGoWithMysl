@@ -97,7 +97,7 @@ public class DrawController : MonoBehaviour
         currentLine = newLineObj.GetComponent<CustomLine>();
         
         Debug.Log("I Create a new Line type of "  + selectedLineType);
-        LineManager.Instance.AddLine(currentLine);
+        if (currentLine != null) LineManager.Instance.AddLine(currentLine);
         lastPointPos = Vector3.zero;
     }
 

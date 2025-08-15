@@ -32,10 +32,17 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
-        
-        if (player == null) return;
 
-        
+        if (player == null)
+        {
+            if (HitPlayerRoutine != null)
+            {
+                StopCoroutine(HitingPlayer());
+            }
+            return;
+        }
+
+
         distance = Vector2.Distance(transform.position, player.position);
 
         if (distance <= attackRange)

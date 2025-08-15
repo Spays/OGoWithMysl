@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8663090818217761620}
   - component: {fileID: 5536947618889304092}
   - component: {fileID: 5189436182168698137}
-  - component: {fileID: 801422290776479556}
   - component: {fileID: 2342517561367112691}
   - component: {fileID: 7476483000751248358}
+  - component: {fileID: 801422290776479556}
   - component: {fileID: 7488556245934519303}
   m_Layer: 0
   m_Name: TestPlayer
@@ -102,6 +102,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+--- !u!114 &2342517561367112691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6117175072861400581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1c196239097ce24c99a246118809a66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentStamina: 50
+  maxStamina: 50
+  StaminaPrice: 1
+  pointSpacing: 0.1
+  StaminaReload: 1
+  LineCount: 5
+  selectedLineType: 1
+  deffenceLinePrefab: {fileID: 9181018405285059931, guid: 0a08e56a6dccf6a4fb8f2a0a74e7fb2d, type: 3}
+  attackLinePrefab: {fileID: 5975929545871196103, guid: f73aec7fe446a864c9e67fe141d9187b, type: 3}
+  defaultLinePrefab: {fileID: 928031482674577370, guid: 3b8e084426f507e4dbf68ecb4fdf19a1, type: 3}
+--- !u!114 &7476483000751248358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6117175072861400581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e70ef396f276074895fd8c3ffff54c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 100
+  killers: 0
 --- !u!50 &801422290776479556
 Rigidbody2D:
   serializedVersion: 4
@@ -129,41 +165,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2342517561367112691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6117175072861400581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1c196239097ce24c99a246118809a66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentStamina: 50
-  maxStamina: 50
-  staminaBuff: 0
-  StaminaPrice: 1
-  pointSpacing: 0.1
-  StaminaReload: 1
-  LineCount: 5
-  selectedLineType: 1
-  deffenceLinePrefab: {fileID: 9181018405285059931, guid: 0a08e56a6dccf6a4fb8f2a0a74e7fb2d, type: 3}
-  attackLinePrefab: {fileID: 5975929545871196103, guid: f73aec7fe446a864c9e67fe141d9187b, type: 3}
-  defaultLinePrefab: {fileID: 928031482674577370, guid: 3b8e084426f507e4dbf68ecb4fdf19a1, type: 3}
---- !u!114 &7476483000751248358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6117175072861400581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e70ef396f276074895fd8c3ffff54c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!58 &7488556245934519303
 CircleCollider2D:
   m_ObjectHideFlags: 0

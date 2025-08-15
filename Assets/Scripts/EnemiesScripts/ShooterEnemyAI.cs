@@ -33,13 +33,22 @@ public class ShooterEnemyAI : MonoBehaviour
 
     void Update()
     {
-        
-        if (player == null) return;
 
-        
+        if (player == null)
+        {
+            if (HitPlayerRoutine != null)
+            {
+                StopCoroutine(HitingPlayer());
+            }
+            return;
+        }
+
+
+
+
         distance = Vector2.Distance(transform.position, player.position);
 
-        if (distance <= attackRange)
+        if (player != null && distance <= attackRange)
         {
             if (HitPlayerRoutine == null)
             {
@@ -62,8 +71,12 @@ public class ShooterEnemyAI : MonoBehaviour
     {
         while (distance <= attackRange)
         {
-            ChasePlayer();
-            gameObject.GetComponent<GunController>().Shoot();
+            if (player != null)
+            {
+                ChasePlayer();
+                gameObject.GetComponent<GunController>().Shoot();
+            }
+            
             yield return new WaitForSeconds(0.5f);
         }
         
