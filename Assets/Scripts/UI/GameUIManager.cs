@@ -27,6 +27,8 @@ public class GameUIManager : MonoBehaviour
     public string mainMenuSceneName = "MainMenu";
     public string gameSceneName = "";
 
+
+
     bool isPaused;
 
     [SerializeField] GameObject pauseUI;

@@ -375,7 +375,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentStamina: 50
   maxStamina: 50
-  staminaBuff: 0
   StaminaPrice: 1
   pointSpacing: 0.1
   StaminaReload: 1
@@ -396,6 +395,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e70ef396f276074895fd8c3ffff54c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HP: 100
+  killers: 0
 --- !u!58 &203854150
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -504,7 +505,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: e1e44b6083ccc0749aee955f6ff5e7ae, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 081b73fc1d2da714abffc609e10611fd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -551,7 +552,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -0.081, y: 0.679, z: 17.209}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -283, y: 182}
+  m_AnchoredPosition: {x: -286, y: 137}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!50 &322185042
@@ -1322,8 +1323,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b479dd08eb7e394f97854bb551befdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameSceneAsset: {fileID: 102900000, guid: 75a841bdff35e3e48bdb3f4377ee644e, type: 3}
-  gameSceneName: SampleScene 1
+  gameSceneAsset: {fileID: 102900000, guid: 1e19152f522709144a78b04756d78ec3, type: 3}
+  gameSceneName: MobsTestScene
   useAsyncLoad: 0
   allowSceneActivation: 1
 --- !u!82 &1210120562
@@ -1932,7 +1933,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.0000073793058, y: 1.2517196}
-  m_ConnectedAnchor: {x: -0.0000008940697, y: -0.99789006}
+  m_ConnectedAnchor: {x: -0.0000014901161, y: -0.9978902}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
